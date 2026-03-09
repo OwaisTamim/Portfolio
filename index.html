@@ -1,195 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Owais Bin Dastagir</title>
-  <meta name="description" content="Portfolio website showcasing projects and skills." />
-  <!-- TailwindCSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Optional: Customize Tailwind configuration -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1E40AF', // Custom primary color
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    /* Additional custom CSS if needed */
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.5">
+<title>Owais Bin Dastagir | Network Engineer</title>
+<meta name="description" content="Network Engineer, Windows Server Specialist and Bangladesh Army Officer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{font-family:Inter,system-ui,Arial}
+html{scroll-behavior:smooth}
+</style>
 </head>
 <body class="bg-gray-50 text-gray-900">
-  <!-- Header / Navigation -->
-  <header class="bg-white shadow fixed w-full z-20">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-xl font-bold">Owais Bin Dastagir</div>
-      <nav class="hidden md:block space-x-6">
-        <a href="#home" class="hover:text-primary">Home</a>
-        <a href="#about" class="hover:text-primary">About</a>
-        <a href="#projects" class="hover:text-primary">Projects</a>
-        <a href="#contact" class="hover:text-primary">Contact</a>
-      </nav>
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden">
-        <button id="menu-toggle" class="focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu" class="hidden md:hidden bg-white shadow">
-      <ul class="px-4 pt-2 pb-4 space-y-2">
-        <li><a href="#home" class="block hover:text-primary">Home</a></li>
-        <li><a href="#about" class="block hover:text-primary">About</a></li>
-        <li><a href="#projects" class="block hover:text-primary">Projects</a></li>
-        <li><a href="#contact" class="block hover:text-primary">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="mt-20">
-    <!-- Hero Section -->
-    <section id="home" class="bg-primary text-white py-20">
-      <div class="container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm Owais Bin Dastagir</h1>
-        <p class="text-xl md:text-2xl mb-8">An Windows Server Expert, Network Engineer, Programmer and Web Developer</p>
-        <a href="#projects" class="bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
-          View My Work
-        </a>
-      </div>
-    </section>
+<header class="bg-white shadow fixed w-full z-20">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+<div class="font-bold text-lg">Owais Bin Dastagir</div>
+<nav class="hidden md:flex gap-6">
+<a href="#home" class="hover:text-blue-700">Home</a>
+<a href="#about" class="hover:text-blue-700">About</a>
+<a href="#skills" class="hover:text-blue-700">Skills</a>
+<a href="#projects" class="hover:text-blue-700">Projects</a>
+<a href="#contact" class="hover:text-blue-700">Contact</a>
+</nav>
+<button id="menuBtn" class="md:hidden">☰</button>
+</div>
+<div id="mobileMenu" class="hidden px-6 pb-4 md:hidden">
+<a href="#home" class="block py-2">Home</a>
+<a href="#about" class="block py-2">About</a>
+<a href="#skills" class="block py-2">Skills</a>
+<a href="#projects" class="block py-2">Projects</a>
+<a href="#contact" class="block py-2">Contact</a>
+</div>
+</header>
 
-    <!-- About Section -->
-    <section id="about" class="py-20">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
-        <div class="flex flex-col md:flex-row items-center gap-8">
-          <img src="https://owaistamim.github.io/pic/picture.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full shadow-lg mx-auto">
-          <div class="md:w-2/3">
-            <p class="mb-4">I'm a web developer with a strong passion for coding and design. I specialize in building responsive, user-friendly websites and applications using modern technologies like HTML, CSS, JavaScript, and React.</p>
-            <p class="mb-4">I enjoy turning ideas into reality and continuously learning new skills to keep up with the ever-evolving tech landscape. Whether it's a personal project or a collaborative venture, I bring creativity and dedication to every task.</p>
-            <h3 class="text-2xl font-semibold mt-4 mb-2">Skills</h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>HTML, CSS, JavaScript</li>
-              <li>React, Next.js</li>
-              <li>Responsive Design</li>
-              <li>Git & Version Control</li>
-              <li>API Integration</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="home" class="pt-32 pb-24 bg-blue-900 text-white text-center">
+<div class="max-w-4xl mx-auto px-6">
+<h1 class="text-4xl md:text-6xl font-bold mb-6">Owais Bin Dastagir</h1>
+<p class="text-xl md:text-2xl mb-4">Database Adminstrator • Windows Server Specialist</p>
+<p class="opacity-90 mb-8">Major, Bangladesh Army | Communication Officer with experience in enterprise networking, satellite communication, database adminstration and infrastructure automation.</p>
+<div class="flex justify-center gap-4">
+<a href="#projects" class="bg-white text-blue-900 px-6 py-3 rounded font-semibold">View Projects</a>
+<a href="#contact" class="border border-white px-6 py-3 rounded">Contact</a>
+</div>
+</div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-gray-100 py-20">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project 1 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://via.placeholder.com/400x250" alt="Project 1" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Project One</h3>
-              <p class="text-gray-700 mb-4">An innovative project showcasing my skills in front-end development and UI design.</p>
-              <a href="#" class="text-primary hover:underline">View Details</a>
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://via.placeholder.com/400x250" alt="Project 2" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Project Two</h3>
-              <p class="text-gray-700 mb-4">A dynamic web application built using modern JavaScript frameworks and APIs.</p>
-              <a href="#" class="text-primary hover:underline">View Details</a>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://via.placeholder.com/400x250" alt="Project 3" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Project Three</h3>
-              <p class="text-gray-700 mb-4">A comprehensive portfolio project highlighting responsive design and interactive elements.</p>
-              <a href="#" class="text-primary hover:underline">View Details</a>
-            </div>
-          </div>
-          <!-- Additional projects can be added similarly -->      
-        </div>
-      </div>
-    </section>
+<section id="about" class="py-20">
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+<img src="https://owaistamim.github.io/pic/picture.jpg" class="rounded-xl shadow" alt="Profile">
+<div>
+<h2 class="text-3xl font-bold mb-4">About Me</h2>
+<p class="mb-4">I am an Network Engineer and Communication Officer in the Bangladesh Army with hands‑on experience designing and maintaining mission‑critical communication systems.</p>
+<p class="mb-4">My expertise includes Database Adminstration, Enterprise Networking, Windows Server administration, MikroTik infrastructure, Satellite communication systems including Starlink and Network Automation.</p>
+<p>I enjoy solving complex infrastructure problems and building tools that improve operational reliability and efficiency.</p>
+</div>
+</div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
-        <div class="max-w-lg mx-auto">
-          <!-- Replace the form action URL with your own or a service like Formspree -->
-          <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
-            <div>
-              <h3 class="text-xl font-bold mb-2">Name</h3>
-              <p class="text-gray-700 mb-4">Owais Bin Dastagir</p>
-              <h3 class="text-xl font-bold mb-2">Country</h3>
-              <p class="text-gray-700 mb-4">Bangladesh</p>
-              <h3 class="text-xl font-bold mb-2">Education</h3>
-              <p class="text-gray-700 mb-4">Bachelor in Electrical, Electronics and Communication Engineering</p>
-              <h3 class="text-xl font-bold mb-2">Fields of Expertise</h3>
-              <p class="text-gray-700 mb-4">Networking</p>
-              <p class="text-gray-700 mb-4">CCNA</p>
-              <p class="text-gray-700 mb-4">CCNP Data Centre</p>
-              <p class="text-gray-700 mb-4">MTCNA</p>
-              <p class="text-gray-700 mb-4">Radio Communication</p>
-              <p class="text-gray-700 mb-4">Starlink</p>
-              <p class="text-gray-700 mb-4">Windows Server</p>
-              <p class="text-gray-700 mb-4">Home Design/ 3D Design</p>
-              <p class="text-gray-700 mb-4">Electrical Design</p>
-              <p class="text-gray-700 mb-4">Database Management</p>
-              <p class="text-gray-700 mb-4">Web Development</p>
-              <p class="text-gray-700 mb-4">Video Editing</p>
-              <p class="text-gray-700 mb-4">Proficiency in Microsoft Office</p>
+<section id="skills" class="bg-gray-100 py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+<div class="grid md:grid-cols-3 gap-8">
 
-              <h3 class="text-xl font-bold mb-2">Mobile</h3>
-              <p class="text-gray-700 mb-4">+880 01776442990</p>
-              <h3 class="text-xl font-bold mb-2">Email</h3>
-              <p class="text-gray-700 mb-4">owais.eece@gmail.com</p>
-              <h3 class="text-xl font-bold mb-2">Experience</h3>
-              <p class="text-gray-700 mb-4">Communication Officer at UN under Bangladesh Army</p>
-              <h3 class="text-xl font-bold mb-2">Current Job Title</h3>
-              <p class="text-gray-700 mb-4">Captain at Bangladesh Army</p>
+<div class="bg-white p-6 rounded shadow">
+<h3 class="font-bold mb-3">Networking</h3>
+<ul class="space-y-1">
+<li>CCNA</li>
+<li>CCNP Data Center</li>
+<li>MTCNA</li>
+<li>Enterprise Routing</li>
+<li>Network Architecture</li>
+</ul>
+</div>
 
+<div class="bg-white p-6 rounded shadow">
+<h3 class="font-bold mb-3">Systems</h3>
+<ul class="space-y-1">
+<li>Windows Server</li>
+<li>Database Management</li>
+<li>Infrastructure Automation</li>
+<li>Virtualization</li>
+<li>Linux Administration</li>
+</ul>
+</div>
 
-            </div>
-            
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="bg-white p-6 rounded shadow">
+<h3 class="font-bold mb-3">Engineering</h3>
+<ul class="space-y-1">
+<li>Radio Communication</li>
+<li>Starlink Deployment</li>
+<li>Electrical Design</li>
+<li>3D Home Design</li>
+<li>Video Editing</li>
+</ul>
+</div>
 
-  <!-- Footer -->
-  <footer class="bg-white py-4 shadow mt-10">
-    <div class="container mx-auto px-4 text-center text-gray-600">
-      ©Owais Bin Dastagir. All rights reserved.
-    </div>
-  </footer>
+</div>
+</div>
+</section>
 
-  <!-- Mobile Menu Toggle Script -->
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+<section id="projects" class="py-20">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Selected Projects</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white shadow rounded overflow-hidden">
+<div class="p-6">
+<h3 class="font-bold text-lg mb-2">MikroTik Traffic Logging System</h3>
+<p class="text-sm">Automated daily logging system that records bandwidth usage from MikroTik routers into CSV for analytics.</p>
+</div>
+</div>
+
+<div class="bg-white shadow rounded overflow-hidden">
+<div class="p-6">
+<h3 class="font-bold text-lg mb-2">OpenVPN Infrastructure Deployment</h3>
+<p class="text-sm">Secure VPN infrastructure deployment using Ubuntu Server and EasyRSA for encrypted enterprise connectivity.</p>
+</div>
+</div>
+
+<div class="bg-white shadow rounded overflow-hidden">
+<div class="p-6">
+<h3 class="font-bold text-lg mb-2">Secure Disk Wipe Utility</h3>
+<p class="text-sm">High speed disk filling tool written in Python for secure deletion and forensic resistance.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="bg-gray-100 py-20">
+<div class="max-w-4xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Career Timeline</h2>
+
+<div class="space-y-6">
+<div class="bg-white p-6 rounded shadow">
+<h3 class="font-bold">Captain — Bangladesh Army</h3>
+<p>Communication Officer responsible for operational communication systems.</p>
+</div>
+
+<div class="bg-white p-6 rounded shadow">
+<h3 class="font-bold">United Nations Mission</h3>
+<p>Communication infrastructure support in multinational operational environment.</p>
+</div>
+
+<div class="bg-white p-6 rounded shadow">
+<h3 class="font-bold">BSc Electrical, Electronics & Communication Engineering</h3>
+<p>Academic background in electronic systems and communication engineering.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="py-20">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-3xl font-bold mb-8">Contact</h2>
+
+<div class="space-y-3">
+<p><strong>Email:</strong> owais.eece@gmail.com</p>
+<p><strong>Phone:</strong> +880 01776442990</p>
+<p><strong>Location:</strong> Bangladesh</p>
+</div>
+
+</div>
+</section>
+
+<footer class="bg-white py-6 text-center text-sm text-gray-600">
+© 2026 Owais Bin Dastagir
+</footer>
+
+<script>
+const btn=document.getElementById('menuBtn')
+const menu=document.getElementById('mobileMenu')
+btn.addEventListener('click',()=>menu.classList.toggle('hidden'))
+</script>
+
 </body>
 </html>
