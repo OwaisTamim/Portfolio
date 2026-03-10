@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.5">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Owais Bin Dastagir | Network Engineer</title>
 <meta name="description" content="Network Engineer, Windows Server Specialist and Bangladesh Army Officer">
+<meta property="og:title" content="Owais Bin Dastagir">
+<meta property="og:description" content="Network Engineer • Windows Server Specialist • Bangladesh Army">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,6 +15,16 @@
 <style>
 body{font-family:Inter,system-ui,Arial}
 html{scroll-behavior:smooth}
+.hero-bg{
+background:linear-gradient(120deg,#0f172a,#1e3a8a,#2563eb);
+background-size:200% 200%;
+animation:gradientMove 12s ease infinite;
+}
+@keyframes gradientMove{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
 </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -19,83 +32,97 @@ html{scroll-behavior:smooth}
 <header class="bg-white shadow fixed w-full z-20">
 <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 <div class="font-bold text-lg">Owais Bin Dastagir</div>
-<nav class="hidden md:flex gap-6">
+<nav class="hidden md:flex gap-6 text-sm">
 <a href="#home" class="hover:text-blue-700">Home</a>
 <a href="#about" class="hover:text-blue-700">About</a>
 <a href="#skills" class="hover:text-blue-700">Skills</a>
 <a href="#projects" class="hover:text-blue-700">Projects</a>
+<a href="#timeline" class="hover:text-blue-700">Timeline</a>
 <a href="#contact" class="hover:text-blue-700">Contact</a>
 </nav>
-<button id="menuBtn" class="md:hidden">☰</button>
+<button id="menuBtn" class="md:hidden text-xl">☰</button>
 </div>
 <div id="mobileMenu" class="hidden px-6 pb-4 md:hidden">
 <a href="#home" class="block py-2">Home</a>
 <a href="#about" class="block py-2">About</a>
 <a href="#skills" class="block py-2">Skills</a>
 <a href="#projects" class="block py-2">Projects</a>
+<a href="#timeline" class="block py-2">Timeline</a>
 <a href="#contact" class="block py-2">Contact</a>
 </div>
 </header>
 
-<section id="home" class="pt-32 pb-24 bg-blue-900 text-white text-center">
+<section id="home" class="hero-bg pt-32 pb-24 text-white text-center">
 <div class="max-w-4xl mx-auto px-6">
 <h1 class="text-4xl md:text-6xl font-bold mb-6">Owais Bin Dastagir</h1>
-<p class="text-xl md:text-2xl mb-4">Database Adminstrator • Windows Server Specialist</p>
-<p class="opacity-90 mb-8">Major, Bangladesh Army | Communication Officer with experience in enterprise networking, satellite communication, database adminstration and infrastructure automation.</p>
-<div class="flex justify-center gap-4">
+<p class="text-xl md:text-2xl mb-4">Network Engineer • Windows Server Specialist</p>
+<p class="opacity-90 mb-8">Major, Bangladesh Army | Communication Officer experienced in enterprise networking, satellite communication, secure infrastructure and automation.</p>
+<div class="flex flex-wrap justify-center gap-4">
 <a href="#projects" class="bg-white text-blue-900 px-6 py-3 rounded font-semibold">View Projects</a>
 <a href="#contact" class="border border-white px-6 py-3 rounded">Contact</a>
+<a href="https://github.com" target="_blank" class="border border-white px-6 py-3 rounded">GitHub</a>
 </div>
 </div>
 </section>
 
 <section id="about" class="py-20">
-<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-<img src="https://owaistamim.github.io/pic/picture.png" class="rounded-xl shadow" alt="Profile">
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<img src="https://owaistamim.github.io/pic/picture.png" class="rounded-xl shadow-lg" alt="Portrait of Owais Bin Dastagir" loading="lazy">
 <div>
 <h2 class="text-3xl font-bold mb-4">About Me</h2>
-<p class="mb-4">I am an Network Engineer and Communication Officer in the Bangladesh Army with hands‑on experience designing and maintaining mission‑critical communication systems.</p>
-<p class="mb-4">My expertise includes Database Adminstration, Enterprise Networking, Windows Server administration, MikroTik infrastructure, Satellite communication systems including Starlink and Network Automation.</p>
-<p>I enjoy solving complex infrastructure problems and building tools that improve operational reliability and efficiency.</p>
+<p class="mb-4">I am a Network Engineer and Communication Officer in the Bangladesh Army responsible for mission‑critical communication systems and infrastructure reliability.</p>
+<p class="mb-4">My work includes enterprise network architecture, secure VPN deployment, satellite communication systems such as Starlink, and Windows Server infrastructure.</p>
+<p>I also build automation tools, infrastructure monitoring solutions and web applications to improve operational efficiency.</p>
 </div>
 </div>
 </section>
 
 <section id="skills" class="bg-gray-100 py-20">
 <div class="max-w-6xl mx-auto px-6">
-<h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
-<div class="grid md:grid-cols-3 gap-8">
+<h2 class="text-3xl font-bold text-center mb-12">Technical Expertise</h2>
+<div class="grid md:grid-cols-4 gap-6">
 
 <div class="bg-white p-6 rounded shadow">
-<h3 class="font-bold mb-3">Networking</h3>
-<ul class="space-y-1">
+<h3 class="font-semibold mb-3">Networking</h3>
+<ul class="text-sm space-y-1">
 <li>CCNA</li>
 <li>CCNP Data Center</li>
 <li>MTCNA</li>
-<li>Enterprise Routing</li>
+<li>Routing & Switching</li>
 <li>Network Architecture</li>
 </ul>
 </div>
 
 <div class="bg-white p-6 rounded shadow">
-<h3 class="font-bold mb-3">Systems</h3>
-<ul class="space-y-1">
+<h3 class="font-semibold mb-3">Systems</h3>
+<ul class="text-sm space-y-1">
 <li>Windows Server</li>
-<li>Database Management</li>
-<li>Infrastructure Automation</li>
-<li>Virtualization</li>
 <li>Linux Administration</li>
+<li>Virtualization</li>
+<li>Database Systems</li>
+<li>Infrastructure Security</li>
 </ul>
 </div>
 
 <div class="bg-white p-6 rounded shadow">
-<h3 class="font-bold mb-3">Engineering</h3>
-<ul class="space-y-1">
+<h3 class="font-semibold mb-3">Automation</h3>
+<ul class="text-sm space-y-1">
+<li>Python Scripting</li>
+<li>Network Automation</li>
+<li>Monitoring Tools</li>
+<li>API Integration</li>
+<li>Data Logging Systems</li>
+</ul>
+</div>
+
+<div class="bg-white p-6 rounded shadow">
+<h3 class="font-semibold mb-3">Engineering</h3>
+<ul class="text-sm space-y-1">
 <li>Radio Communication</li>
 <li>Starlink Deployment</li>
 <li>Electrical Design</li>
-<li>3D Home Design</li>
-<li>Video Editing</li>
+<li>3D Design</li>
+<li>Video Production</li>
 </ul>
 </div>
 
@@ -105,74 +132,68 @@ html{scroll-behavior:smooth}
 
 <section id="projects" class="py-20">
 <div class="max-w-6xl mx-auto px-6">
-<h2 class="text-3xl font-bold text-center mb-12">Selected Projects</h2>
-
+<h2 class="text-3xl font-bold text-center mb-12">Engineering Projects</h2>
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="bg-white shadow rounded overflow-hidden">
-<div class="p-6">
+<div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
 <h3 class="font-bold text-lg mb-2">MikroTik Traffic Logging System</h3>
-<p class="text-sm">Automated daily logging system that records bandwidth usage from MikroTik routers into CSV for analytics.</p>
-</div>
-</div>
-
-<div class="bg-white shadow rounded overflow-hidden">
-<div class="p-6">
-<h3 class="font-bold text-lg mb-2">OpenVPN Infrastructure Deployment</h3>
-<p class="text-sm">Secure VPN infrastructure deployment using Ubuntu Server and EasyRSA for encrypted enterprise connectivity.</p>
-</div>
+<p class="text-sm">RouterOS automation script that exports daily bandwidth statistics to CSV for network usage analysis.</p>
 </div>
 
-<div class="bg-white shadow rounded overflow-hidden">
-<div class="p-6">
-<h3 class="font-bold text-lg mb-2">Secure Disk Wipe Utility</h3>
-<p class="text-sm">High speed disk filling tool written in Python for secure deletion and forensic resistance.</p>
+<div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+<h3 class="font-bold text-lg mb-2">Secure OpenVPN Deployment</h3>
+<p class="text-sm">Enterprise VPN architecture using Ubuntu Server, EasyRSA and hardened security configuration.</p>
 </div>
+
+<div class="bg-white shadow rounded-lg p-6 hover:shadow-lg transition">
+<h3 class="font-bold text-lg mb-2">Secure Disk Wipe Tool</h3>
+<p class="text-sm">Python based disk‑filling utility used to securely erase data and prevent forensic recovery.</p>
 </div>
 
 </div>
 </div>
 </section>
 
-<section class="bg-gray-100 py-20">
+<section id="timeline" class="bg-gray-100 py-20">
 <div class="max-w-4xl mx-auto px-6">
 <h2 class="text-3xl font-bold text-center mb-12">Career Timeline</h2>
-
 <div class="space-y-6">
+
 <div class="bg-white p-6 rounded shadow">
-<h3 class="font-bold">Captain — Bangladesh Army</h3>
-<p>Communication Officer responsible for operational communication systems.</p>
+<h3 class="font-bold">Major — Bangladesh Army</h3>
+<p class="text-sm">Leading communication infrastructure and operational network systems.</p>
 </div>
 
 <div class="bg-white p-6 rounded shadow">
 <h3 class="font-bold">United Nations Mission</h3>
-<p>Communication infrastructure support in multinational operational environment.</p>
+<p class="text-sm">Provided communication infrastructure support in multinational operational environments.</p>
 </div>
 
 <div class="bg-white p-6 rounded shadow">
-<h3 class="font-bold">BSc Electrical, Electronics & Communication Engineering</h3>
-<p>Academic background in electronic systems and communication engineering.</p>
-</div>
+<h3 class="font-bold">B.Sc. in Electrical, Electronics & Communication Engineering</h3>
+<p class="text-sm">Academic specialization in communication systems and electronic engineering.</p>
 </div>
 
+</div>
 </div>
 </section>
 
 <section id="contact" class="py-20">
-<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="max-w-3xl mx-auto px-6 text-center">
 <h2 class="text-3xl font-bold mb-8">Contact</h2>
-
-<div class="space-y-3">
+<div class="space-y-3 text-lg">
 <p><strong>Email:</strong> owais.eece@gmail.com</p>
-<p><strong>Phone:</strong> +880 01776442990</p>
+<p><strong>Phone:</strong> +880 01769009794</p>
 <p><strong>Location:</strong> Bangladesh</p>
 </div>
-
+<div class="mt-8">
+<a href="mailto:owais.eece@gmail.com" class="bg-blue-700 text-white px-6 py-3 rounded">Send Email</a>
+</div>
 </div>
 </section>
 
 <footer class="bg-white py-6 text-center text-sm text-gray-600">
-© 2026 Owais Bin Dastagir
+© 2026 Owais Bin Dastagir • Network Engineer
 </footer>
 
 <script>
@@ -183,4 +204,3 @@ btn.addEventListener('click',()=>menu.classList.toggle('hidden'))
 
 </body>
 </html>
-
